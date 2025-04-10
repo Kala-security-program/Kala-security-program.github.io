@@ -1,210 +1,89 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html><html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>KALA SECURITY PROGRAM</title>
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet">
   <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
   <script id="MathJax-script" async
     src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
     body {
+      margin: 0;
       font-family: 'Orbitron', sans-serif;
-      background-color: #000;
+      background-color: #000000;
       color: #00ffff;
+      padding: 2rem;
       text-align: center;
-      padding: 2rem;
-      position: relative;
-      overflow-x: hidden;
-    }
+    }h1 {
+  color: #ff00ff;
+  text-shadow: 0 0 10px #ff00ff;
+}
 
-    /* Black Hole Swirl Overlay */
-    body::before {
-      content: '';
-      position: fixed;
-      top: -50%;
-      left: -50%;
-      width: 200%;
-      height: 200%;
-      background: radial-gradient(circle, rgba(0,0,0,0) 40%, rgba(0,0,0,0.8) 100%);
-      animation: swirl 30s linear infinite;
-      z-index: 0;
-    }
+.block {
+  background: rgba(0, 255, 255, 0.05);
+  border: 1px solid #00ffff;
+  padding: 1.5rem;
+  margin: 2rem auto;
+  max-width: 900px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px #00ffff33;
+}
 
-    @keyframes swirl {
-      0% { transform: rotate(0deg) scale(1); }
-      100% { transform: rotate(360deg) scale(1); }
-    }
+.math {
+  font-size: 1.2rem;
+  color: #ffffff;
+  margin-top: 1rem;
+}
 
-    .whitehole-glow {
-      position: fixed;
-      top: 50%;
-      left: 50%;
-      width: 1000px;
-      height: 1000px;
-      background: radial-gradient(circle, #ffffff44, transparent 70%);
-      transform: translate(-50%, -50%);
-      z-index: 0;
-      pointer-events: none;
-      animation: pulse 3s infinite ease-in-out;
-      filter: blur(120px);
-    }
+p {
+  font-size: 1.1rem;
+  color: #e0f7ff;
+  line-height: 1.7;
+}
 
-    @keyframes pulse {
-      0%, 100% { opacity: 0.3; transform: translate(-50%, -50%) scale(1); }
-      50% { opacity: 0.6; transform: translate(-50%, -50%) scale(1.1); }
-    }
+footer {
+  margin-top: 4rem;
+  font-size: 0.9rem;
+  color: #777;
+}
 
-    header, section, footer {
-      position: relative;
-      z-index: 2;
-    }
+a {
+  color: #00ffff;
+  text-decoration: none;
+}
 
-    h1 {
-      font-size: 3rem;
-      color: #ff00ff;
-      text-shadow: 0 0 15px #ff00ff;
-    }
+a:hover {
+  color: #ff00ff;
+}
 
-    h2 {
-      font-size: 2rem;
-      color: #00ffff;
-      margin-top: 2rem;
-      text-shadow: 0 0 10px #00ffff;
-    }
-
-    .section {
-      background: rgba(0, 255, 255, 0.05);
-      border: 1px solid #00ffff;
-      box-shadow: 0 0 20px #00ffff33;
-      margin: 2rem auto;
-      max-width: 900px;
-      padding: 2rem;
-      border-radius: 15px;
-    }
-
-    p {
-      font-size: 1.2rem;
-      color: #e0f7ff;
-      line-height: 1.8;
-    }
-
-    .formula {
-      background-color: #111;
-      border: 1px solid #00ffff;
-      border-radius: 10px;
-      margin-top: 1.5rem;
-      padding: 1rem;
-      font-size: 1.2rem;
-      color: #ffffff;
-    }
-
-    footer {
-      margin-top: 4rem;
-      font-size: 0.9rem;
-      color: #777;
-    }
-
-    a {
-      color: #00ffff;
-      text-decoration: none;
-    }
-
-    a:hover {
-      color: #ff00ff;
-    }
   </style>
 </head>
 <body>
-  <!-- White Hole Glow -->
-  <div class="whitehole-glow"></div>
-
-  <header>
-    <h1>KALA SECURITY PROGRAM</h1>
-    <p>Founded by NVRK Sai Kamesh</p>
-  </header>
-
-  <section class="section">
+  <h1>KALA SECURITY PROGRAM</h1>
+  <p>Founded by NVRK Sai Kamesh | Cyberpunk Innovation</p>  <div class="block">
     <h2>Introduction</h2>
-    <p>Welcome to the Kala Security Program — a futuristic, ethical, and cyberpunk initiative combining Rigvedic science with quantum cybersecurity, white hole theory, and time encryption. Our goal is to explore and defend the digital future through open-source technology powered by Kala Theory.</p>
-  </section>
-
-  <section class="section">
+    <p>The Kala Security Program is a futuristic cybersecurity and scientific initiative integrating Rigvedic time-field science with quantum mechanics. Our mission is to explore time travel, quantum encryption, and ethical hacking through open-source innovation.</p>
+  </div>  <div class="block">
+    <h2>About Kala Security Program</h2>
+    <p>Founded by NVRK Sai Kamesh, Kala Security Program develops advanced tools like KalaRavana, KalaVajra, and KalaVidyut. Inspired by ancient Indian knowledge and powered by cyberpunk aesthetics, we focus on protecting the digital future and exploring theoretical physics in real applications such as teleportation, time distortion, and white hole dynamics.</p>
+  </div>  <div class="block">
     <h2>Main Kala Theory Formulas</h2>
-
-    <div class="formula">
-      <strong>1. White Hole Curvature Reversal:</strong><br>
-      R_w = \frac{-1}{r^2} \cdot \left(1 - \frac{2GM}{rc^2}\right)^{-1}
-    </div>
-
-    <div class="formula">
-      <strong>2. Kala Time Expansion Function:</strong><br>
-      \Phi(t) = \frac{\Delta \tau}{\Delta t} \cdot \left(1 + \alpha \sin(\omega t)\right)
-    </div>
-
-    <div class="formula">
-      <strong>3. Kala Vajra Teleportation Path:</strong><br>
-      \text{Location}_{\text{final}} = \text{Location}_{\text{initial}} + \int_0^T v(t) \cdot \Phi(t) \cdot dt
-    </div>
-
-    <div class="formula">
-      <strong>4. Kala Vidite Quantum Energy (Casimir Effect):</strong><br>
-      E = \frac{\hbar c \pi^2}{240 \cdot d^4} \cdot A
-    </div>
-
-    <div class="formula">
-      <strong>5. Power Output:</strong><br>
-      P = \frac{E}{t}
-    </div>
-
-    <div class="formula">
-      <strong>6. Quantum Energy Drop Field:</strong><br>
-      \Psi_q = \frac{\partial E_q}{\partial t} + \nabla \cdot \vec{J_q}
-    </div>
-
-    <div class="formula">
-      <strong>7. Total Quantum-Time Field Energy:</strong><br>
-      E_{\text{total}} = E \cdot \Phi(t)
-    </div>
-  </section>
-
-  <section class="section">
+    <div class="math">R_w = \frac{-1}{r^2} \cdot \left(1 - \frac{2GM}{rc^2}\right)^{-1}</div>
+    <div class="math">\Phi(t) = \frac{\Delta \tau}{\Delta t} \cdot \left(1 + \alpha \sin(\omega t)\right)</div>
+    <div class="math">\text{Location}_{\text{final}} = \text{Location}_{\text{initial}} + \int_0^T v(t) \cdot \Phi(t) \cdot dt</div>
+    <div class="math">E = \frac{\hbar c \pi^2}{240 \cdot d^4} \cdot A</div>
+    <div class="math">P = \frac{E}{t}</div>
+    <div class="math">\Psi_q = \frac{\partial E_q}{\partial t} + \nabla \cdot \vec{J_q}</div>
+    <div class="math">E_{\text{total}} = E \cdot \Phi(t)</div>
+  </div>  <div class="block">
     <h2>Subformulas & Supporting Equations</h2>
-
-    <div class="formula">
-      <strong>8. Quantum Current:</strong><br>
-      \vec{J_q} = \rho_q \cdot \vec{v_q}
-    </div>
-
-    <div class="formula">
-      <strong>9. Velocity Function in Teleportation:</strong><br>
-      v(t) = v_0 + at
-    </div>
-
-    <div class="formula">
-      <strong>10. Time Oscillation Frequency:</strong><br>
-      \omega = \frac{2\pi}{T}
-    </div>
-
-    <div class="formula">
-      <strong>11. Photon Energy (Light-based White Hole):</strong><br>
-      E = hf
-    </div>
-
-    <div class="formula">
-      <strong>12. Modified White Hole Curvature (Light-Based):</strong><br>
-      R_{w}^{light} = \frac{-1}{r^2} \cdot \left(1 - \frac{2GE_{light}}{rc^4}\right)^{-1}
-    </div>
-  </section>
-
-  <footer>
+    <div class="math">\vec{J_q} = \rho_q \cdot \vec{v_q}</div>
+    <div class="math">v(t) = v_0 + at</div>
+    <div class="math">\omega = \frac{2\pi}{T}</div>
+    <div class="math">E = hf</div>
+    <div class="math">R_{w}^{light} = \frac{-1}{r^2} \cdot \left(1 - \frac{2GE_{light}}{rc^4}\right)^{-1}</div>
+  </div>  <footer>
     &copy; 2025 Kala Security Program | Cyberpunk by Kala | <a href="https://github.kacademy.info">Visit GitHub</a>
   </footer>
 </body>
