@@ -4,64 +4,82 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>KALA SECURITY PROGRAM</title>
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet">
-  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-  <script id="MathJax-script" async
-    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <script>
+    window.MathJax = {
+      tex: { inlineMath: [['\', '\']], displayMath: [['\', '\']] },
+      svg: { fontCache: 'global' }
+    };
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" async></script>
   <style>
-    body {
+    * {
       margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
       font-family: 'Orbitron', sans-serif;
-      background-color: #000000;
+      background: radial-gradient(ellipse at center, #000 0%, #0a0a0a 100%);
       color: #00ffff;
-      padding: 2rem;
       text-align: center;
-    }h1 {
-  color: #ff00ff;
-  text-shadow: 0 0 10px #ff00ff;
-}
-
-.block {
-  background: rgba(0, 255, 255, 0.05);
-  border: 1px solid #00ffff;
-  padding: 1.5rem;
-  margin: 2rem auto;
-  max-width: 900px;
-  border-radius: 10px;
-  box-shadow: 0 0 20px #00ffff33;
-}
-
-.math {
-  font-size: 1.2rem;
-  color: #ffffff;
-  margin-top: 1rem;
-}
-
-p {
-  font-size: 1.1rem;
-  color: #e0f7ff;
-  line-height: 1.7;
-}
-
-footer {
-  margin-top: 4rem;
-  font-size: 0.9rem;
-  color: #777;
-}
-
-a {
-  color: #00ffff;
-  text-decoration: none;
-}
-
-a:hover {
-  color: #ff00ff;
-}
-
+      padding: 2rem;
+      overflow-x: hidden;
+    }
+    header {
+      text-shadow: 0 0 10px #ff00ff;
+    }
+    h1 {
+      font-size: 3rem;
+      color: #ff00ff;
+    }
+    h2 {
+      color: #00ffff;
+      text-shadow: 0 0 10px #00ffff;
+      margin-top: 2rem;
+    }
+    .block {
+      background: rgba(0, 255, 255, 0.08);
+      border: 1px solid #00ffff;
+      padding: 2rem;
+      margin: 2rem auto;
+      max-width: 900px;
+      border-radius: 15px;
+      box-shadow: 0 0 25px #00ffff33;
+      animation: fadeIn 1.5s ease-in-out;
+    }
+    .math {
+      font-size: 1.2rem;
+      color: #ffffff;
+      margin-top: 1.2rem;
+    }
+    p {
+      font-size: 1.1rem;
+      color: #e0f7ff;
+      line-height: 1.7;
+    }
+    footer {
+      margin-top: 4rem;
+      font-size: 0.9rem;
+      color: #777;
+    }
+    a {
+      color: #00ffff;
+      text-decoration: none;
+    }
+    a:hover {
+      color: #ff00ff;
+    }
+    @keyframes fadeIn {
+      0% {opacity: 0; transform: translateY(20px);}
+      100% {opacity: 1; transform: translateY(0);}
+    }
   </style>
 </head>
 <body>
-  <h1>KALA SECURITY PROGRAM</h1>
-  <p>Founded by NVRK Sai Kamesh | Cyberpunk Innovation</p>  <div class="block">
+  <header>
+    <h1>KALA SECURITY PROGRAM</h1>
+    <p>Founded by NVRK Sai Kamesh | Cyberpunk Innovation</p>
+  </header>  <div class="block">
     <h2>Introduction</h2>
     <p>The Kala Security Program is a futuristic cybersecurity and scientific initiative integrating Rigvedic time-field science with quantum mechanics. Our mission is to explore time travel, quantum encryption, and ethical hacking through open-source innovation.</p>
   </div>  <div class="block">
@@ -84,7 +102,7 @@ a:hover {
     <div class="math">E = hf</div>
     <div class="math">R_{w}^{light} = \frac{-1}{r^2} \cdot \left(1 - \frac{2GE_{light}}{rc^4}\right)^{-1}</div>
   </div>  <footer>
-    &copy; 2025 Kala Security Program | Cyberpunk by Kala | <a href="https://github.kacademy.info">Visit GitHub</a>
+    &copy; 2025 Kala Security Program | Cyberpunk by Kala | <a href="https://github.com/kala-security-program">Visihttps://github.com/kala-security-programt GitHub</a>
   </footer>
 </body>
-</html
+</html>
