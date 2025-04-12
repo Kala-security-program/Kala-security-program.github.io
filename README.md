@@ -1,1 +1,1 @@
-Official website of Dr. Sai Kamesh Yadavalli, Ph.D — Founder of Kala Security Program, cybersecurity & quantum time research.”
+Official site of Dr. Sai Kamesh Yadavalli, Ph.D — Creator of Kala Security Program, Quantum Time Theory & Cyberpunk AI.
