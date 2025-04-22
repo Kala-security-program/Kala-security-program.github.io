@@ -1,141 +1,108 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Kala Theory Flipbook</title>
-
-  <!-- MathJax -->
-  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-  <script id="MathJax-script" async
-    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kala Theory Formulas</title>
   <style>
     body {
-      background: radial-gradient(circle at center, #0f0f0f 0%, #000000 100%);
-      color: #00ffee;
-      font-family: 'Courier New', monospace;
+      background: #0a0a0a;
+      color: #00ffe1;
+      font-family: 'Courier New', Courier, monospace;
       margin: 0;
-      padding: 0;
+      padding: 2rem;
     }
-
-    .book-container {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding: 30px 10px;
+    h1, h2 {
+      color: #ff00ff;
     }
-
-    .page {
-      width: 90%;
-      max-width: 1000px;
-      background: rgba(0, 0, 0, 0.85);
-      color: #00ffee;
-      border: 2px solid #00ffee;
-      border-radius: 12px;
-      padding: 30px;
-      margin: 20px 0;
-      box-shadow: 0 0 25px #00ffff55;
+    .formula {
+      background: #111;
+      border: 1px solid #333;
+      border-left: 5px solid #00fff7;
+      padding: 1rem;
+      margin-bottom: 1.5rem;
+      box-shadow: 0 0 10px #00f2ff33;
     }
-
-    h2 {
-      color: #00ffff;
-      margin-top: 0;
-    }
-
-    p {
-      line-height: 1.7;
-      font-size: 16px;
-    }
-
-    @media (max-width: 768px) {
-      .page {
-        padding: 20px;
-      }
+    code {
+      color: #fff;
+      font-size: 1rem;
+      display: block;
+      margin-top: 0.5rem;
     }
   </style>
 </head>
 <body>
-  <div class="book-container">
+  <h1>Kala Theory: Cyberpunk Formula Archive</h1>
 
-    <div class="page">
-      <h2>Kala Scientific License</h2>
-      <p><strong>License No: KALA-2025-0420</strong></p>
-      <p>This work is licensed under the <strong>Kala Scientific License</strong>, established by Dr. Sai Kamesh Yadavalli, Ph.D, Founder & CEO of the Kala Security Program.</p>
-      <p>All Kala Theory formulas, diagrams, concepts, and derived innovations in this document are protected intellectual property. This license applies to all digital, print, and academic formats under the creator's official authorship.</p>
-      <p>Usage is limited to educational, research, and experimental use. Any form of commercial or unauthorized distribution, reproduction, or claim of ownership will be legally challenged. Scientific integrity, originality, and proper credit must be maintained.</p>
-      <p>© 2025 Dr. Sai Kamesh Yadavalli. All Rights Reserved.</p>
-    </div>
-
-    <div class="page">
-      <h2>Founder & Visionary</h2>
-      <p><strong>Dr. Sai Kamesh Yadavalli</strong><br>Ph.D, CEO & Founder<br>Kala Security Program</p>
-      <p>Innovator of the Kala Time Travel Theory, Multiverse Teleportation System, White Hole Propulsion Physics, and Kala Quantum Engine.</p>
-    </div>
-
-    <div class="page">
-      <h2>Kala Time Expansion Function</h2>
-      <p>\[ \Phi(t) = \frac{\Delta \tau}{\Delta t} \cdot \left(1 + \alpha \sin(\omega t)\right) \]</p>
-      <p>This function models how time expands under oscillating quantum curvature. Used in time machine simulation and white hole algorithms.</p>
-    </div>
-
-    <div class="page">
-      <h2>Future Time Travel</h2>
-      <p>\[ \Delta T_{\text{future}} = \Delta t \cdot \left(1 - \frac{1}{\Phi(t)}\right) \]</p>
-      <p>This determines the amount of time traveled into the future using the Kala Time Expansion Function.</p>
-    </div>
-
-    <div class="page">
-      <h2>White Hole Curvature Reversal</h2>
-      <p>\[ R_w = \frac{-1}{r^2} \cdot \left(1 - \frac{2GM}{rc^2}\right)^{-1} \]</p>
-      <p>Models the inverse curvature around white holes used in repulsive space-field simulation in Kala Theory.</p>
-    </div>
-
-    <div class="page">
-      <h2>Quantum Energy (Casimir Effect)</h2>
-      <p>\[ E = \frac{\hbar c \pi^2}{240 \cdot d^4} \cdot A \]</p>
-      <p>\[ P = \frac{E}{t} \]</p>
-      <p>This energy is extracted from vacuum using Casimir plates, essential in powering time curvature devices.</p>
-    </div>
-
-    <div class="page">
-      <h2>Quantum Energy Drop Field</h2>
-      <p>\[ \Psi_q = \frac{\partial E_q}{\partial t} + \nabla \cdot \vec{J_q} \]</p>
-      <p>Time-dependent quantum decay field energy calculation used in white hole scanners and plasma fields.</p>
-    </div>
-
-    <div class="page">
-      <h2>Total Quantum-Time Energy</h2>
-      <p>\[ E_{\text{total}} = E \cdot \Phi(t) \]</p>
-      <p>Combines quantum energy with the Kala time function to evaluate energy used in time-tunnel travel.</p>
-    </div>
-
-    <div class="page">
-      <h2>Multiverse Time Travel</h2>
-      <p>\[ \Delta T_{\text{multi}} = \int_0^T v(t) \cdot \Phi(t, u_n) \, dt \]</p>
-      <p>Calculates time jump across universes using relative universe-specific time dilation.</p>
-    </div>
-
-    <div class="page">
-      <h2>White Hole Satellite Teleportation Path</h2>
-      <p>\[ \text{Location}_{\text{final}} = \text{Location}_{\text{initial}} + \int_0^T v(t) \cdot \Phi(t) \, dt \]</p>
-      <p>This predicts white-hole driven space jumps for satellites using real-time quantum functions.</p>
-    </div>
-
-    <div class="page">
-      <h2>Kala Schwarzschild Function</h2>
-      <p>\[ R_{kala}(t) = \frac{2GM}{c^2} \cdot \Phi(t) \]</p>
-      <p>Modified Schwarzschild radius in Kala Theory reflecting real-time time distortion near mass curves.</p>
-    </div>
-    <div class="page">
-      <h2>Time-to-Energy Conversion (Kala Theory)</h2>
-      <p>This graph shows how time intervals (Δt) are converted into usable energy (Eₜ) using the Kala Time Expansion Function:</p>
-      <p>\[ E_T(t) = k_q \cdot \Phi(t) \cdot \Delta t \]</p>
-      <p>Where \( \Phi(t) \) is the Kala Time Expansion curvature modulation function.</p>
-      <img src="kala_time_to_energy_plot.png" alt="Kala Time to Energy Graph">
-    </div>
-    
+  <div class="formula">
+    <h2>1. Kala Time Expansion Function</h2>
+    <code>
+      Φ(t) = (Δτ / Δt) * (1 + α * sin(ωt))
+    </code>
   </div>
+
+  <div class="formula">
+    <h2>2. Kala–Newton Time Expansion</h2>
+    <code>
+      Φ<sub>Newton</sub>(t) = sqrt(1 - 2GM / rc<sup>2</sup>) * (1 + α * sin(ωt))
+    </code>
+  </div>
+
+  <div class="formula">
+    <h2>3. White Hole Curvature Reversal</h2>
+    <code>
+      R<sub>w</sub> = -1 / r<sup>2</sup> * (1 - 2GM / rc<sup>2</sup>)<sup>-1</sup>
+    </code>
+  </div>
+
+  <div class="formula">
+    <h2>4. Quantum Energy Drop Field</h2>
+    <code>
+      Ψ<sub>q</sub> = ∂E<sub>q</sub>/∂t + ∇ ⋅ →J<sub>q</sub>
+    </code>
+  </div>
+
+  <div class="formula">
+    <h2>5. Kala Multiverse Time Travel</h2>
+    <code>
+      ΔT<sub>multi</sub> = ∫ v(t) * Φ(t, u<sub>n</sub>) dt
+    </code>
+  </div>
+
+  <div class="formula">
+    <h2>6. Kala Future Time Travel</h2>
+    <code>
+      ΔT<sub>future</sub> = Δt * (1 - 1 / Φ(t))
+    </code>
+  </div>
+
+  <div class="formula">
+    <h2>7. Kala Schwarzschild Function</h2>
+    <code>
+      R<sub>kala</sub>(t) = (2GM / c<sup>2</sup>) * Φ(t)
+    </code>
+  </div>
+
+  <div class="formula">
+    <h2>8. White Hole-Based Teleportation</h2>
+    <code>
+      Location<sub>final</sub> = Location<sub>initial</sub> + ∫ v(t) * Φ(t) dt
+    </code>
+  </div>
+
+  <div class="formula">
+    <h2>9. Quantum Energy (Casimir Effect)</h2>
+    <code>
+      E = (ℏ c π<sup>2</sup>) / (240 * d<sup>4</sup>) * A
+    </code>
+  </div>
+
+  <div class="formula">
+    <h2>10. Power Output</h2>
+    <code>
+      P = E / t
+    </code>
+  </div>
+
 </body>
 </html>
