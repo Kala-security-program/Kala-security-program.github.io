@@ -253,6 +253,26 @@
         line-height: 1.8;
         color: var(--text-primary);
       }
+      
+      /* --- Gallery Section --- */
+      .gallery-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 1.5rem;
+      }
+      .gallery-item img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        border-radius: 8px;
+        border: 2px solid var(--border-color);
+        transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+      }
+      .gallery-item img:hover {
+        transform: scale(1.05);
+        box-shadow: 0 0 25px var(--shadow-color);
+        border-color: var(--accent-primary);
+      }
 
       /* --- Projects Section --- */
       .projects-grid {
@@ -400,14 +420,35 @@
       <section id="profile" class="content-section">
         <div class="profile-grid">
           <div>
-            <!-- PRO-TIP: Use a high-resolution, professional headshot with a transparent background for best results -->
-            <img src="https://raw.githubusercontent.com/Kala-security-program/Kala-security-program.github.io/main/assets/dr-sai-kamesh-yadavalli.jpg" alt="Dr. Sai Kamesh Yadavalli" class="profile-image" onerror="this.style.display='none'">
+            <img src="Dr.Sai Kamesh Yadavalli.jpg" alt="Dr. Sai Kamesh Yadavalli" class="profile-image" onerror="this.onerror=null;this.src='https://placehold.co/400x400/05080a/d0d8e0?text=Image+Not+Found';">
           </div>
           <div class="profile-bio">
             <h3>Pioneering the Future of Digital Security</h3>
             <p>
               Dr. Sai Kamesh Yadavalli is a visionary researcher at the intersection of quantum physics, artificial intelligence, and cybersecurity. His work, encapsulated in the groundbreaking "Kala Theory," leverages principles from ancient Vedic texts to solve modern computational challenges. As the founder of the Kala Security Program, he leads a dedicated team in developing next-generation security tools and exploring the theoretical frontiers of time, space, and information.
             </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Gallery Section with your original photos -->
+      <section id="gallery" class="content-section">
+        <h2 class="section-title">Gallery</h2>
+        <div class="gallery-grid">
+          <div class="gallery-item">
+            <img src="file_0000000071e061f796c9634304cfb606_conversation_id=67f93c46-11a4-800b-b284-6fe905ba8045&message_id=cf0123a8-7f41-4346-b110-c182367f18bf (1).png" alt="Dr. Sai Kamesh Yadavalli, Ph.D. - Kala Security Program CEO" onerror="this.onerror=null;this.src='https://placehold.co/600x400/05080a/d0d8e0?text=Image+Not+Found';">
+          </div>
+          <div class="gallery-item">
+            <img src="file_00000000d4f4623090e1979540abf9fe_conversation_id=67f9ca4f-2490-800b-ad5f-e61072c1c316&message_id=c2dc71d7-880a-4c2d-98c9-208a416a1efb.png" alt="Diagram explaining the importance of Kala Theory" onerror="this.onerror=null;this.src='https://placehold.co/600x400/05080a/d0d8e0?text=Image+Not+Found';">
+          </div>
+          <div class="gallery-item">
+            <img src="file_000000003c1861f7bf4dd5af74c1fc59_conversation_id=67f93c46-11a4-800b-b284-6fe905ba8045&message_id=d6e96846-68d6-478d-9d1f-6c985273114f.png" alt="Co-founder of the Kala Security Program" onerror="this.onerror=null;this.src='https://placehold.co/600x400/05080a/d0d8e0?text=Image+Not+Found';">
+          </div>
+          <div class="gallery-item">
+            <img src="file_00000000ff0061f78e4e3d0dac5b5fbd_conversation_id=68075c8a-b294-800b-bd31-6f1395f53acf&message_id=70d05b14-03c7-46d3-a2d7-bfc379605add.png" alt="Informational graphic about Kala Theory" onerror="this.onerror=null;this.src='https://placehold.co/600x400/05080a/d0d8e0?text=Image+Not+Found';">
+          </div>
+           <div class="gallery-item">
+            <img src="file_0000000064d86230b658c808e730808e_conversation_id=67f9ca4f-2490-800b-ad5f-e61072c1c316&message_id=cb2ebfc6-809f-4081-bca3-d7bae850ae10.png" alt="Futuristic technology concept art" onerror="this.onerror=null;this.src='https://placehold.co/600x400/05080a/d0d8e0?text=Image+Not+Found';">
           </div>
         </div>
       </section>
