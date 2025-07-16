@@ -5,13 +5,6 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/11.8.0/math.min.js"></script>
   <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
   <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-  <script>
-  window.onload = function () {
-    if (window.MathJax) {
-      MathJax.typeset();
-    }
-  };
-  </script>
   <style>
     body {
       background-color: #0d0d0d;
@@ -52,10 +45,21 @@
       font-weight: bold;
       color: #ff66cc;
     }
+    blockquote {
+      font-size: 1.2rem;
+      margin: 2rem 0;
+      padding: 1rem;
+      background-color: #111;
+      border-left: 5px solid #00ffff;
+      color: #ffffff;
+    }
   </style>
 </head>
 <body>
-  <h1>Kala–Gana Multiversal Consciousness Theory (KG-MCT)</h1>  <div class="section">
+  <h1>Kala–Gana Multiversal Consciousness Theory (KG-MCT)</h1>  <blockquote>
+    “The mind can see the multiverse — and feel it, fully, in dreams.”<br>
+    <em>— Kala–Gana Theory by Sai Kamesh Yadavalli</em>
+  </blockquote>  <div class="section">
     <h2>Unified Hypothesis</h2>
     <p>The mind ascends through <strong>Gana Layers</strong> of consciousness. At higher layers, time perception dilates according to:</p>
     <p>$$ \Phi(t) = \sqrt{1 - \frac{2GM}{rc^2}} \cdot \left(1 + \alpha \sin(\omega t)\right) $$</p>
@@ -108,12 +112,13 @@
       </tr>
     </table>
   </div>  <div class="section">
-    <h2>Evidence and Interpretation</h2>
+    <h2>Evidence Supporting the Quote</h2>
     <ul>
-      <li><strong>Lucid Dreams:</strong> Controlled access to parallel realities</li>
-      <li><strong>Déjà Vu:</strong> Momentary sync with alternate timelines</li>
-      <li><strong>REM Patterns:</strong> Recurring deep brainwave oscillations</li>
-      <li><strong>Quantum Cognition:</strong> Bio-physical plausibility emerging in neuroscience</li>
+      <li><strong>Lucid Dreams:</strong> Stanford studies (LaBerge, 1985) prove full consciousness inside REM dreams.</li>
+      <li><strong>Many-Worlds Interpretation:</strong> Everett + Deutsch show quantum events imply parallel universes.</li>
+      <li><strong>Quantum Brain Hypothesis:</strong> Orch-OR theory (Hameroff & Penrose) suggests quantum processing in microtubules.</li>
+      <li><strong>Theta/Gamma Brainwaves:</strong> Enable deep, dream-based symbolic integration (Varela et al. 2001).</li>
+      <li><strong>Déjà Rêvé:</strong> Neuroscientific evidence of real events reflecting prior dreams (Kherlakian, 2020).</li>
     </ul>
   </div>  <div class="section">
     <h2>Conclusion</h2>
@@ -121,16 +126,21 @@
   </div>  <script>
     function calculatePhi() {
       const G = 6.6743e-11;
-      const M = 5.972e24; // Earth mass in kg
-      const r = 6.371e6;  // Earth radius in m
+      const M = 5.972e24;
+      const r = 6.371e6;
       const c = 3e8;
       const alpha = 0.1;
-      const omega = Math.PI / 2; // example
-      const t = 5; // example time
-
+      const omega = Math.PI / 2;
+      const t = 5;
       const gravityTerm = 1 - (2 * G * M) / (r * c * c);
       const phi = Math.sqrt(gravityTerm) * (1 + alpha * Math.sin(omega * t));
       document.getElementById("math-output").innerText = `Example Φ(t): ${phi.toExponential(5)}`;
     }
+  </script>  <script>
+    window.onload = function () {
+      if (window.MathJax) {
+        MathJax.typeset();
+      }
+    };
   </script></body>
-  </html>
+</html>
