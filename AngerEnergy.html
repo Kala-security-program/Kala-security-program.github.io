@@ -9,88 +9,75 @@
   </script>
   <style>
     body {
-      background-color: #0f0f1a;
+      background-color: #0f0f0f;
       color: #00ffcc;
       font-family: 'Courier New', monospace;
-      padding: 2rem;
+      padding: 20px;
     }
-    h1 {
-      color: #ff00aa;
-      text-shadow: 0 0 10px #ff00aa;
+    h1, h2 {
+      color: #ff00ff;
     }
-    label, input {
-      font-size: 1.2rem;
-      margin-top: 1rem;
-      display: block;
-    }
-    input {
-      background-color: #111;
+    input, button {
+      background-color: #222;
       border: 1px solid #00ffcc;
       color: #00ffcc;
-      padding: 0.5rem;
-      width: 100px;
+      padding: 10px;
+      margin: 5px;
+      font-family: 'Courier New', monospace;
     }
-    .result {
-      margin-top: 1.5rem;
-      font-size: 1.4rem;
-      color: #ffff00;
+    .formula-box {
+      background-color: #111;
+      border-left: 4px solid #ff00ff;
+      padding: 10px;
+      margin: 10px 0;
     }
   </style>
 </head>
 <body>
-
   <h1>Kala Anger Conversation Theory</h1>
 
-  <p><strong>Formula:</strong></p>
-  <p>
-    $$ E_{\\text{anger}}(t) = \\left( m_{\\text{words}} \\cdot c_{\\text{emotion}}^2 \\right) \\cdot \\left(1 - \\Phi(t) \\right) $$
-  </p>
+  <div class="formula-box">
+    <h2>1. Formula</h2>
+    <p>
+      $$E_{\\text{anger}}(t) = \\left( m_{\\text{words}} \\cdot c_{\\text{emotion}}^2 \\right) \\cdot \\left(1 - \\Phi(t)\\right)$$
+    </p>
+  </div>
 
-  <p><strong>Explanation:</strong></p>
-  <p>
-    This formula expresses how emotional energy during anger-driven conversations can be calculated.
-    - $$m_{\\text{words}}$$ is the mental weight or intensity of the words used (scale of 0–10).  
-    - $$c_{\\text{emotion}}$$ is the emotional speed — how fast emotions are released (scale of 0–10).  
-    - $$\\Phi(t)$$ is the Kala Time Expansion function (value from 0 to 1), representing how much your time sense is expanded.  
-    <br><br>
-    When $$\\Phi(t) = 1$$, time is expanded and anger energy becomes 0.  
-    When $$\\Phi(t) = 0$$, time is collapsed and anger is at full release.  
-  </p>
+  <div class="formula-box">
+    <h2>2. Explanation</h2>
+    <p>
+      In real life, this formula measures how much emotional energy is released as anger over time.
+      <br>
+      - \( m_{\text{words}} \) is the "mass" or weight of words (how heavy or sharp they are).<br>
+      - \( c_{\text{emotion}} \) is the emotional intensity of the conversation.<br>
+      - \( \Phi(t) \) is Kala's Time Expansion Function, which increases with calmness and reduces anger.<br><br>
+      As time passes and \( \Phi(t) \to 1 \), the anger energy drops to zero. If time is compressed (\( \Phi(t) \to 0 \)), anger is fully released.
+    </p>
+  </div>
 
-  <h2>Try It Yourself:</h2>
-
-  <label for="mWords">Mental Mass of Words (m<sub>words</sub>):</label>
-  <input type="number" id="mWords" value="5">
-
-  <label for="cEmotion">Emotion Speed (c<sub>emotion</sub>):</label>
-  <input type="number" id="cEmotion" value="3">
-
-  <label for="phi">Time Expansion (Φ(t)):</label>
-  <input type="number" id="phi" step="0.01" min="0" max="1" value="0.4">
-
-  <div class="result" id="output">Result: </div>
+  <div class="formula-box">
+    <h2>3. Try with Random Values</h2>
+    <p>
+      <label>Word Mass ( \( m_{\text{words}} \) ): </label>
+      <input type="number" id="mass" value="5"><br>
+      <label>Emotion Intensity ( \( c_{\text{emotion}} \) ): </label>
+      <input type="number" id="c" value="3"><br>
+      <label>Time Expansion ( \( \Phi(t) \) from 0 to 1): </label>
+      <input type="number" step="0.01" id="phi" value="0.5"><br>
+      <button onclick="calculate()">Calculate Anger Energy</button>
+    </p>
+    <p id="result"></p>
+  </div>
 
   <script>
-    const mWordsInput = document.getElementById("mWords");
-    const cEmotionInput = document.getElementById("cEmotion");
-    const phiInput = document.getElementById("phi");
-    const output = document.getElementById("output");
-
     function calculate() {
-      const m = parseFloat(mWordsInput.value);
-      const c = parseFloat(cEmotionInput.value);
-      const phi = parseFloat(phiInput.value);
-
-      const energy = m * Math.pow(c, 2) * (1 - phi);
-      output.innerHTML = `Result: Eₐₙgₑᵣ(t) = ${energy.toFixed(3)} units`;
+      const m = parseFloat(document.getElementById('mass').value);
+      const c = parseFloat(document.getElementById('c').value);
+      const phi = parseFloat(document.getElementById('phi').value);
+      const energy = (m * Math.pow(c, 2)) * (1 - phi);
+      document.getElementById('result').innerHTML = 
+        `Anger Energy (Eₐₙgₑᵣ) = ${(energy).toFixed(2)} units`;
     }
-
-    mWordsInput.addEventListener("input", calculate);
-    cEmotionInput.addEventListener("input", calculate);
-    phiInput.addEventListener("input", calculate);
-
-    calculate(); // Initial calculation
   </script>
-
 </body>
 </html>
