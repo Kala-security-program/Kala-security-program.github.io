@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Kala Anger Formula Tester</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/11.11.1/math.min.js"></script>
+  <style>
+    body {
+      background-color: #0f0f0f;
+      color: #00ffcc;
+      font-family: 'Courier New', monospace;
+      padding: 20px;
+    }
+    h1 {
+      color: #ff00cc;
+    }
+    input, button {
+      padding: 10px;
+      margin: 10px;
+      background: #111;
+      color: #00ffcc;
+      border: 1px solid #00ffcc;
+      font-size: 1em;
+    }
+    .output {
+      margin-top: 20px;
+      background-color: #111;
+      padding: 15px;
+      border: 1px solid #ff00cc;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>⚡ Kala Anger Energy Calculator</h1>
+
+  <label>Mass of Words (m_words):</label><br>
+  <input type="number" id="m_words" value="10"><br>
+
+  <label>Emotion Intensity (c_emotion):</label><br>
+  <input type="number" id="c_emotion" value="3"><br>
+
+  <label>Time Expansion Φ(t):</label><br>
+  <input type="number" id="phi" value="0.5" step="0.01" min="0" max="1"><br>
+
+  <button onclick="calculate()">Calculate E_anger(t)</button>
+  <button onclick="randomize()">Random Test</button>
+
+  <div class="output" id="result">
+    🔍 Result will appear here...
+  </div>
+
+  <script>
+    function calculate() {
+      const m = parseFloat(document.getElementById('m_words').value);
+      const c = parseFloat(document.getElementById('c_emotion').value);
+      const phi = parseFloat(document.getElementById('phi').value);
+
+      const E = m * Math.pow(c, 2) * (1 - phi);
+      document.getElementById('result').innerHTML = `🧠 <b>E_anger(t)</b> = ${E.toFixed(2)} energy units`;
+    }
+
+    function randomize() {
+      document.getElementById('m_words').value = Math.floor(Math.random() * 20 + 1);
+      document.getElementById('c_emotion').value = Math.floor(Math.random() * 6 + 1);
+      document.getElementById('phi').value = (Math.random()).toFixed(2);
+      calculate();
+    }
+  </script>
+
+</body>
+</html>
