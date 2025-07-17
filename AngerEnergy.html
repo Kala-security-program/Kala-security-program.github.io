@@ -3,113 +3,93 @@
 <head>
   <meta charset="UTF-8">
   <title>Kala Anger Conversation Theory</title>
-  <!-- Load MathJax for formula rendering -->
-  <script>
-    window.MathJax = {
-      tex: {
-        inlineMath: [['$', '$']],
-        displayMath: [['$$', '$$']]
-      },
-      svg: {
-        fontCache: 'global'
-      }
-    };
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
   </script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js" async></script>
-
   <style>
     body {
-      background-color: #0b0b0b;
-      color: #00ffee;
-      font-family: 'Courier New', monospace;
-      padding: 30px;
-    }
-
-    h1 {
-      color: #ff00cc;
-      font-size: 28px;
-    }
-
-    input, button {
-      padding: 10px;
-      margin: 10px 0;
-      background: #111;
+      background-color: #0f0f1a;
       color: #00ffcc;
-      border: 1px solid #00ffcc;
-      font-size: 1em;
-      width: 100%;
+      font-family: 'Courier New', monospace;
+      padding: 2rem;
     }
-
-    .output, .formula, .explanation {
-      margin-top: 20px;
+    h1 {
+      color: #ff00aa;
+      text-shadow: 0 0 10px #ff00aa;
+    }
+    label, input {
+      font-size: 1.2rem;
+      margin-top: 1rem;
+      display: block;
+    }
+    input {
       background-color: #111;
-      padding: 20px;
-      border: 1px solid #ff00cc;
-      border-radius: 10px;
+      border: 1px solid #00ffcc;
+      color: #00ffcc;
+      padding: 0.5rem;
+      width: 100px;
     }
-
-    .formula {
-      font-size: 1.2em;
-      color: #ffffff;
-    }
-
-    button {
-      cursor: pointer;
+    .result {
+      margin-top: 1.5rem;
+      font-size: 1.4rem;
+      color: #ffff00;
     }
   </style>
 </head>
 <body>
 
-  <h1>⚛ Kala Anger Conversation Theory</h1>
+  <h1>Kala Anger Conversation Theory</h1>
 
-  <div class="formula">
-    <strong>Formula:</strong><br>
-    $$ E_{\text{anger}}(t) = \left( m_{\text{words}} \cdot c_{\text{emotion}}^2 \right) \cdot (1 - \Phi(t)) $$
-  </div>
+  <p><strong>Formula:</strong></p>
+  <p>
+    $$ E_{\\text{anger}}(t) = \\left( m_{\\text{words}} \\cdot c_{\\text{emotion}}^2 \\right) \\cdot \\left(1 - \\Phi(t) \\right) $$
+  </p>
 
-  <div class="explanation">
-    <strong>Explanation:</strong><br>
-    This formula calculates the **emotional energy** released during an angry moment.<br><br>
-    - \( m_{\text{words}} \): Number of intense words spoken (mental mass)<br>
-    - \( c_{\text{emotion}} \): Emotional intensity (tone, volume)<br>
-    - \( \Phi(t) \): Kala Time Expansion — how much your inner perception slows time<br><br>
-    Higher intensity + low control = high anger energy. More time expansion = less emotional damage.
-  </div>
+  <p><strong>Explanation:</strong></p>
+  <p>
+    This formula expresses how emotional energy during anger-driven conversations can be calculated.
+    - $$m_{\\text{words}}$$ is the mental weight or intensity of the words used (scale of 0–10).  
+    - $$c_{\\text{emotion}}$$ is the emotional speed — how fast emotions are released (scale of 0–10).  
+    - $$\\Phi(t)$$ is the Kala Time Expansion function (value from 0 to 1), representing how much your time sense is expanded.  
+    <br><br>
+    When $$\\Phi(t) = 1$$, time is expanded and anger energy becomes 0.  
+    When $$\\Phi(t) = 0$$, time is collapsed and anger is at full release.  
+  </p>
 
-  <h2>🧪 Try it Yourself:</h2>
+  <h2>Try It Yourself:</h2>
 
-  <label>Number of Angry Words (m_words):</label>
-  <input type="number" id="m_words" value="10">
+  <label for="mWords">Mental Mass of Words (m<sub>words</sub>):</label>
+  <input type="number" id="mWords" value="5">
 
-  <label>Emotion Intensity (c_emotion):</label>
-  <input type="number" id="c_emotion" value="3">
+  <label for="cEmotion">Emotion Speed (c<sub>emotion</sub>):</label>
+  <input type="number" id="cEmotion" value="3">
 
-  <label>Time Expansion \( \Phi(t) \):</label>
-  <input type="number" id="phi" value="0.5" step="0.01" min="0" max="1">
+  <label for="phi">Time Expansion (Φ(t)):</label>
+  <input type="number" id="phi" step="0.01" min="0" max="1" value="0.4">
 
-  <button onclick="calculate()">🔍 Calculate E_anger(t)</button>
-  <button onclick="randomize()">🎲 Random Values</button>
-
-  <div class="output" id="result">
-    🧠 Result will appear here...
-  </div>
+  <div class="result" id="output">Result: </div>
 
   <script>
+    const mWordsInput = document.getElementById("mWords");
+    const cEmotionInput = document.getElementById("cEmotion");
+    const phiInput = document.getElementById("phi");
+    const output = document.getElementById("output");
+
     function calculate() {
-      const m = parseFloat(document.getElementById('m_words').value);
-      const c = parseFloat(document.getElementById('c_emotion').value);
-      const phi = parseFloat(document.getElementById('phi').value);
+      const m = parseFloat(mWordsInput.value);
+      const c = parseFloat(cEmotionInput.value);
+      const phi = parseFloat(phiInput.value);
 
-      const E = m * Math.pow(c, 2) * (1 - phi);
-      document.getElementById('result').innerHTML = `⚡ Emotional Energy: <strong>E_anger(t) = ${E.toFixed(2)}</strong> units`;
+      const energy = m * Math.pow(c, 2) * (1 - phi);
+      output.innerHTML = `Result: Eₐₙgₑᵣ(t) = ${energy.toFixed(3)} units`;
     }
 
-    function randomize() {
-      document.getElementById('m_words').value = Math.floor(Math.random() * 20 + 1);
-      document.getElementById('c_emotion').value = Math.floor(Math.random() * 6 + 1);
-      document.getElementById('phi').value = (Math.random()).toFixed(2);
-      calculate();
-    }
+    mWordsInput.addEventListener("input", calculate);
+    cEmotionInput.addEventListener("input", calculate);
+    phiInput.addEventListener("input", calculate);
+
+    calculate(); // Initial calculation
   </script>
 
 </body>
