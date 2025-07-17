@@ -3,11 +3,20 @@
 <head>
   <meta charset="UTF-8">
   <title>Kala Anger Conversation Theory</title>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/11.11.1/math.min.js"></script>
-  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-  <script id="MathJax-script" async
-    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+  <!-- Load MathJax for formula rendering -->
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$']],
+        displayMath: [['$$', '$$']]
+      },
+      svg: {
+        fontCache: 'global'
+      }
+    };
   </script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js" async></script>
+
   <style>
     body {
       background-color: #0b0b0b;
@@ -15,10 +24,12 @@
       font-family: 'Courier New', monospace;
       padding: 30px;
     }
+
     h1 {
       color: #ff00cc;
       font-size: 28px;
     }
+
     input, button {
       padding: 10px;
       margin: 10px 0;
@@ -28,6 +39,7 @@
       font-size: 1em;
       width: 100%;
     }
+
     .output, .formula, .explanation {
       margin-top: 20px;
       background-color: #111;
@@ -35,10 +47,12 @@
       border: 1px solid #ff00cc;
       border-radius: 10px;
     }
+
     .formula {
       font-size: 1.2em;
       color: #ffffff;
     }
+
     button {
       cursor: pointer;
     }
@@ -50,18 +64,16 @@
 
   <div class="formula">
     <strong>Formula:</strong><br>
-    \\[
-    E_{\\text{anger}}(t) = \\left( m_{\\text{words}} \\cdot c_{\\text{emotion}}^2 \\right) \\cdot (1 - \\Phi(t))
-    \\]
+    $$ E_{\text{anger}}(t) = \left( m_{\text{words}} \cdot c_{\text{emotion}}^2 \right) \cdot (1 - \Phi(t)) $$
   </div>
 
   <div class="explanation">
     <strong>Explanation:</strong><br>
     This formula calculates the **emotional energy** released during an angry moment.<br><br>
     - \( m_{\text{words}} \): Number of intense words spoken (mental mass)<br>
-    - \( c_{\text{emotion}} \): Emotional delivery speed (tone, intensity)<br>
-    - \( \Phi(t) \): Kala Time Expansion — your mind's ability to slow down/react<br><br>
-    The higher the emotion and lower the time expansion, the more energy is released.
+    - \( c_{\text{emotion}} \): Emotional intensity (tone, volume)<br>
+    - \( \Phi(t) \): Kala Time Expansion — how much your inner perception slows time<br><br>
+    Higher intensity + low control = high anger energy. More time expansion = less emotional damage.
   </div>
 
   <h2>🧪 Try it Yourself:</h2>
@@ -72,10 +84,10 @@
   <label>Emotion Intensity (c_emotion):</label>
   <input type="number" id="c_emotion" value="3">
 
-  <label>Time Expansion \\( \\Phi(t) \\):</label>
+  <label>Time Expansion \( \Phi(t) \):</label>
   <input type="number" id="phi" value="0.5" step="0.01" min="0" max="1">
 
-  <button onclick="calculate()">🔍 Calculate E_angry(t)</button>
+  <button onclick="calculate()">🔍 Calculate E_anger(t)</button>
   <button onclick="randomize()">🎲 Random Values</button>
 
   <div class="output" id="result">
@@ -98,14 +110,6 @@
       document.getElementById('phi').value = (Math.random()).toFixed(2);
       calculate();
     }
-  </script>
-
-  </script>  <script>
-    window.onload = function () {
-      if (window.MathJax) {
-        MathJax.typeset();
-      }
-    };
   </script>
 
 </body>
