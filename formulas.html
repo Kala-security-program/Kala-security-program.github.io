@@ -1,150 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Kala Theory – All Formulas</title>
-    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <style>
-        body {
-            font-family: 'Segoe UI', sans-serif;
-            margin: 30px;
-            background: #f4f4f4;
-            color: #222;
-            line-height: 1.6;
-        }
-        h1, h2 {
-            color: #2c3e50;
-        }
-        .formula {
-            background: #fff;
-            padding: 15px;
-            margin: 10px 0;
-            border-left: 5px solid #2980b9;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <title>Kala Theory – Full Formulas</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <style>
+    body {
+      background-color: #0a0a0a;
+      color: #ffffff;
+      font-family: 'Segoe UI', sans-serif;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #00ffe0;
+    }
+
+    .formula {
+      background-color: #1a1a1a;
+      padding: 15px;
+      margin: 20px 0;
+      border-left: 5px solid #00ffe0;
+      overflow-x: auto;
+    }
+
+    @media (max-width: 600px) {
+      body {
+        padding: 10px;
+      }
+    }
+  </style>
 </head>
 <body>
 
-    <h1>Kala Theory: All Scientific Formulas</h1>
-    <p>Developed by <strong>Sai Kamesh Yadavalli</strong></p>
+  <h1>Kala Theory – Full Formula Set</h1>
 
-    <h2>1. Kala–Newton Time Expansion Function</h2>
-    <div class="formula">
-        $$ \Phi_{Newton}(t) = \sqrt{1 - \frac{2GM}{rc^2}} \cdot \left(1 + \alpha \sin(\omega t)\right) $$
-    </div>
-    <p>Combines General Relativity with Kala’s time oscillation model. Used in Kala Time Dilation.</p>
+  <!-- Time Expansion & Oscillation -->
+  <div class="formula">$$ \Phi(t) = 1 + \alpha \sin(\omega t + \theta) $$</div>
+  <div class="formula">$$ \Phi_{Newton}(t) = \sqrt{1 - \frac{2GM}{rc^2}} \cdot \left(1 + \alpha \sin(\omega t)\right) $$</div>
+  <div class="formula">$$ C(t) = \frac{dt'}{dt} = \Phi(t) $$</div>
 
-    <h2>2. Kala Time Oscillation Function</h2>
-    <div class="formula">
-        $$ \Phi(t) = 1 + \alpha \sin(\omega t + \theta) $$
-    </div>
-    <p>Core time variation function in Kala Theory — represents cyclic time energy flow.</p>
+  <!-- Time Travel -->
+  <div class="formula">$$ T_{future} = t \cdot \Phi(t)^n $$</div>
+  <div class="formula">$$ T_{past} = \frac{t}{\Phi(t)^n} $$</div>
+  <div class="formula">$$ \Delta t_{sim} = \Delta t \cdot \Phi(t) $$</div>
 
-    <h2>3. Kala–White Hole Expansion Energy</h2>
-    <div class="formula">
-        $$ E_{white}(t) = \frac{1}{\Phi(t)} \cdot \frac{hc}{\lambda} $$
-    </div>
-    <p>Photon energy emerging from white hole through inverse time flow.</p>
+  <!-- Kala–Newton Laws -->
+  <div class="formula">$$ \text{Inertia}_{Kala} = m \cdot \Phi(t) $$</div>
+  <div class="formula">$$ F = m \cdot \Phi(t) \cdot a $$</div>
+  <div class="formula">$$ R = \frac{\Phi(t_{\text{receive}})}{\Phi(t_{\text{send}})} \cdot A $$</div>
 
-    <h2>4. Kala Time Capsule Forward Equation</h2>
-    <div class="formula">
-        $$ T_{future} = t \cdot \Phi(t)^n $$
-    </div>
-    <p>Used in simulating forward time jump inside the Kala Time Capsule.</p>
+  <!-- Relativistic Boost -->
+  <div class="formula">$$ t' = \frac{t}{\sqrt{1 - \left(\frac{v}{c}\right)^2}} \cdot \Phi(t) $$</div>
 
-    <h2>5. Kala Time Capsule Reverse Equation</h2>
-    <div class="formula">
-        $$ T_{past} = \frac{t}{\Phi(t)^n} $$
-    </div>
-    <p>Used to simulate reverse time travel where local time slows down or reverses.</p>
+  <!-- White Hole / Black Hole Dynamics -->
+  <div class="formula">$$ E_{white}(t) = \frac{1}{\Phi(t)} \cdot \frac{hc}{\lambda} $$</div>
+  <div class="formula">$$ \Omega(t, r) = \Phi(t) \cdot \left(1 - \frac{r_s}{r} \right)^{-1/2} $$</div>
+  <div class="formula">$$ t_{obs} = \frac{t_{in}}{\Phi(t)} \cdot \left(1 - \frac{r_s}{r} \right)^{-1/2} $$</div>
 
-    <h2>6. Kala–Newton’s First Law (Inertia under Time Expansion)</h2>
-    <div class="formula">
-        $$ \text{Effective Inertia} = m \cdot \Phi(t) $$
-    </div>
+  <!-- Quantum Time State -->
+  <div class="formula">$$ \Psi(t_1, t_2) = \Psi_0 \cdot \exp\left( -i \int_{t_1}^{t_2} \Phi(t) \, dt \right) $$</div>
 
-    <h2>7. Kala–Newton’s Second Law (Modified Force)</h2>
-    <div class="formula">
-        $$ F = m \cdot \Phi(t) \cdot a $$
-    </div>
+  <!-- Kala Teleportation -->
+  <div class="formula">$$ \Delta t_{tele} = |\Phi(t_1) - \Phi(t_2)| \cdot d $$</div>
 
-    <h2>8. Kala–Newton’s Third Law (Reaction-Time Curvature)</h2>
-    <div class="formula">
-        $$ R = \frac{\Phi(t_{\text{receive}})}{\Phi(t_{\text{send}})} \cdot A $$
-    </div>
-    <p>Where \( A \) is action and \( R \) is reaction adjusted for time difference.</p>
+  <!-- Time-Spectrum (Fourier Transform) -->
+  <div class="formula">$$ \hat{\Phi}(f) = \int_{-\infty}^{\infty} \Phi(t) \cdot e^{-2\pi i f t} dt $$</div>
 
-    <h2>9. Kala Time Compression Ratio</h2>
-    <div class="formula">
-        $$ C(t) = \frac{dt'}{dt} = \Phi(t) $$
-    </div>
+  <!-- Thermal Evolution -->
+  <div class="formula">$$ T(t) = T_0 \cdot \Phi(t)^{\gamma} $$</div>
 
-    <h2>10. Kala–Relativity Boost (Temporal Lorentz)</h2>
-    <div class="formula">
-        $$ t' = \frac{t}{\sqrt{1 - \left(\frac{v}{c}\right)^2}} \cdot \Phi(t) $$
-    </div>
-    <p>Combines special relativity with Kala time frame.</p>
+  <!-- Multiverse Crossover -->
+  <div class="formula">$$ f_m = \frac{1}{T} \cdot \left| \Phi(t_1) - \Phi(t_2) \right| $$</div>
 
-    <h2>11. Kala White Hole – Temporal Curvature Field</h2>
-    <div class="formula">
-        $$ \Omega(t, r) = \Phi(t) \cdot \left(1 - \frac{r_s}{r}\right)^{-1/2} $$
-    </div>
-    <p>Used in defining spatial expansion near white hole core (opposite of Schwarzschild black hole).</p>
+  <!-- Emotion and Thought Energetics -->
+  <div class="formula">$$ E_{emotion} = m_{thought} \cdot c^2 \cdot \Phi(t) $$</div>
+  <div class="formula">$$ \text{Anger Energy} \rightarrow \text{Work} = mc^2 \cdot \Phi(t) $$</div>
 
-    <h2>12. Kala Quantum Entangled Time Collapse</h2>
-    <div class="formula">
-        $$ \Psi(t_1, t_2) = \Psi_0 \cdot \exp\left( -i \int_{t_1}^{t_2} \Phi(t) \, dt \right) $$
-    </div>
-    <p>Entanglement state across variable time frames with Kala curvature effect.</p>
+  <!-- Kala Entropy Model -->
+  <div class="formula">$$ S(t) = k \cdot \ln(\Omega) \cdot \Phi(t) $$</div>
 
-    <h2>13. Kala–Fourier Time Transform</h2>
-    <div class="formula">
-        $$ \hat{\Phi}(f) = \int_{-\infty}^{\infty} \Phi(t) \cdot e^{-2\pi i f t} dt $$
-    </div>
-    <p>Used for spectral analysis of oscillating time curvature in Kala networks.</p>
+  <!-- Kala AI Time Training Function (Neural Oscillator) -->
+  <div class="formula">$$ W(t+1) = W(t) - \eta \cdot \nabla L \cdot \Phi(t) $$</div>
 
-    <h2>14. Kala–Thermal Time Function</h2>
-    <div class="formula">
-        $$ T(t) = T_0 \cdot \Phi(t)^{\gamma} $$
-    </div>
-    <p>Temperature evolution in non-linear time environments (e.g., quantum white holes).</p>
+  <!-- Kala QPU Time Evolution Operator -->
+  <div class="formula">$$ U(t) = e^{-i H \Phi(t)} $$</div>
 
-    <h2>15. Kala–Multiverse Intersection Frequency</h2>
-    <div class="formula">
-        $$ f_m = \frac{1}{T} \cdot \left| \Phi(t_1) - \Phi(t_2) \right| $$
-    </div>
-    <p>Frequency of phase crossings between timelines with different Φ states.</p>
-
-    <h2>16. Kala–Energy-Emotion Equivalence</h2>
-    <div class="formula">
-        $$ E_{emotion} = m_{thought} \cdot c^2 \cdot \Phi(t) $$
-    </div>
-    <p>Emotional energy transformation model from E = mc² with time amplification.</p>
-
-    <h2>17. Kala–Anger Conversion (Energy Redirection)</h2>
-    <div class="formula">
-        $$ \text{Anger Energy} \rightarrow \text{Work} = E = mc^2 \cdot \Phi(t) $$
-    </div>
-    <p>Model to convert emotion into creativity or mechanical work using Kala dynamics.</p>
-
-    <h2>18. Kala–Virtual Time Displacement (For Simulators)</h2>
-    <div class="formula">
-        $$ \Delta t_{sim} = \Delta t \cdot \Phi(t) $$
-    </div>
-    <p>Used in simulation engines based on KalaQPU for time flow control.</p>
-
-    <h2>19. Kala–Black Hole Time Freeze Approximation</h2>
-    <div class="formula">
-        $$ t_{obs} = \frac{t_{in}}{\Phi(t)} \cdot \left(1 - \frac{r_s}{r}\right)^{-1/2} $$
-    </div>
-    <p>Combines black hole effects with Kala Theory — observer-based time freeze.</p>
-
-    <h2>20. Kala–Teleportation Time Drift</h2>
-    <div class="formula">
-        $$ \Delta t_{tele} = |\Phi(t_1) - \Phi(t_2)| \cdot d $$
-    </div>
-    <p>Used in quantum teleportation simulation (KalaQPU) across time-divergent cores.</p>
+  <!-- Kala Time Integration Engine -->
+  <div class="formula">$$ I(t) = \int \Phi(t) \, dt $$</div>
 
 </body>
-</html>
+                                                                                  </html>
