@@ -3,154 +3,194 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Kala Theory Formulas</title>
+  <title>Kala Theory - Full Formulas</title>
   <style>
     body {
       background-color: #121212;
-      color: #ffffff;
+      color: #e0e0e0;
       font-family: 'Segoe UI', sans-serif;
-      padding: 2rem;
+      padding: 20px;
+      line-height: 1.6;
     }
     h1, h2 {
-      color: #00ffe0;
+      color: #00ffff;
+    }
+    code {
+      background-color: #1e1e1e;
+      padding: 2px 6px;
+      border-radius: 4px;
     }
     .formula {
-      background: #1e1e1e;
-      border-left: 5px solid #00ffe0;
-      padding: 1rem;
-      margin-bottom: 2rem;
-    }
-    .formula code {
-      display: block;
-      color: #90ee90;
-      font-size: 1.2em;
-    }
-    .explanation {
-      color: #dcdcdc;
-      margin-top: 0.5rem;
-    }
-    .example {
-      color: #ffa07a;
-      margin-top: 0.5rem;
+      background-color: #1a1a1a;
+      padding: 10px;
+      border-radius: 6px;
+      margin-bottom: 20px;
+      overflow-x: auto;
     }
   </style>
   <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-  <script type="text/javascript" id="MathJax-script" async
-          src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+  <script id="MathJax-script" async
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
   </script>
 </head>
 <body>
-  <h1>Kala Theory: Full Formulas with Explanations</h1>
 
-  <div class="formula">
-    <h2>1. Kala Time Expansion Function</h2>
-    <code>$$ \Phi(t) = \sqrt{1 - \frac{2GM}{rc^2}} \cdot (1 + \alpha \sin(\omega t)) $$</code>
-    <div class="explanation">
-      Extends Einstein's gravitational time dilation with time-based oscillations. Shows how time stretches due to mass (GR) and oscillates due to Kala Field.
-    </div>
-    <div class="example">
-      Example: Near a black hole, time slows. But Kala Theory adds that time can fluctuate like a wave due to internal universal fields.
-    </div>
-  </div>
+<h1>Kala Theory - Complete Formulas with Explanations</h1>
 
-  <div class="formula">
-    <h2>2. Kala–Newton's Second Law</h2>
-    <code>$$ F = m \cdot \Phi(t) \cdot a $$</code>
-    <div class="explanation">
-      Modification of Newton’s Second Law by multiplying with the time expansion factor \( \Phi(t) \). Effective force varies with time.
-    </div>
-    <div class="example">
-      Example: In Kala-influenced zones, the same mass might feel more or less force due to local time expansion.
-    </div>
-  </div>
+<h2>1. Kala Time Expansion Function</h2>
+<div class="formula">
+  $$ \Phi(t) = \sqrt{1 - \frac{2GM}{rc^2}} \cdot \left(1 + \alpha \sin(\omega t)\right) $$
+</div>
+<p>
+  This formula combines gravitational time dilation (from General Relativity) with oscillations (Kala Theory). It explains how time expands or compresses.
+</p>
+<p><strong>Usage:</strong> Used in all core KalaQPU, time capsule, time travel, and expansion-based calculations.</p>
 
-  <div class="formula">
-    <h2>3. Kala–Newton's First Law</h2>
-    <code>$$ \text{Inertia} = m \cdot \Phi(t) $$</code>
-    <div class="explanation">
-      Kala Theory says inertia is time-dependent. In regions where time is "stretched", resistance to motion increases.
-    </div>
-    <div class="example">
-      Example: In deep space near a white hole, time expansion causes a spaceship to resist acceleration more.
-    </div>
-  </div>
+<hr>
 
-  <div class="formula">
-    <h2>4. Kala–Newton's Third Law (Reaction Ratio)</h2>
-    <code>$$ R = \frac{\Phi(t_{\text{receiver}})}{\Phi(t_{\text{sender}})} $$</code>
-    <div class="explanation">
-      Reactions can be amplified or delayed depending on time dilation at each point. Applies especially in multiverse interactions or time-warped regions.
-    </div>
-    <div class="example">
-      Example: A push in a slow-time area might cause a weaker or delayed effect in a fast-time area.
-    </div>
-  </div>
+<h2>2. Kala–Newton's First Law (Inertia in Kala Time)</h2>
+<div class="formula">
+  $$ \text{Inertia}_{\text{Kala}} = m \cdot \Phi(t) $$
+</div>
+<p>
+  Mass retains motion relative to the expanded time state.
+</p>
+<p><strong>Example:</strong> If time is expanded (Φ(t) > 1), inertia increases, making the object harder to move.</p>
 
-  <div class="formula">
-    <h2>5. Kala Multiverse Frequency</h2>
-    <code>$$ f_{\text{multi}} = \frac{1}{\Phi(t)} $$</code>
-    <div class="explanation">
-      Frequency of access or interaction with parallel timelines or dimensions depends inversely on time expansion.
-    </div>
-    <div class="example">
-      Example: When \( \Phi(t) \) is small (time compressed), multiverse access is high.
-    </div>
-  </div>
+<hr>
 
-  <div class="formula">
-    <h2>6. Kala Quantum Gate Evolution</h2>
-    <code>$$ U_{\text{Kala}}(t) = e^{-iH\Phi(t)t/\hbar} $$</code>
-    <div class="explanation">
-      Extends quantum evolution with time expansion. Gate operations become time-variable, useful for Kala Quantum AI and QPUs.
-    </div>
-    <div class="example">
-      Example: A qubit in a KalaQPU behaves differently under time-expanded logic than in standard quantum circuits.
-    </div>
-  </div>
+<h2>3. Kala–Newton's Second Law (Force in Kala Frame)</h2>
+<div class="formula">
+  $$ F = m \cdot \Phi(t) \cdot a $$
+</div>
+<p>
+  Force depends on time dilation. More time expansion requires more force for the same acceleration.
+</p>
 
-  <div class="formula">
-    <h2>7. White Hole Ejection Velocity</h2>
-    <code>$$ v_{eject} = c \cdot \left(1 - \Phi(t)\right) $$</code>
-    <div class="explanation">
-      Suggests that the velocity of material ejected from a white hole depends on the inverse of time expansion.
-    </div>
-    <div class="example">
-      Example: At maximum time expansion (\( \Phi(t) = 1 \)), no ejection occurs.
-    </div>
-  </div>
+<hr>
 
-  <div class="formula">
-    <h2>8. Kala Time Mirror Equation</h2>
-    <code>$$ t_{\text{future}} = t_{\text{past}} \cdot \Phi(t)^2 $$</code>
-    <div class="explanation">
-      Predicts time reflections or reversals based on temporal expansion. Useful in time travel simulations.
-    </div>
-    <div class="example">
-      Example: A backward-traveling signal doubles in perceived time when entering a Kala-influenced region.
-    </div>
-  </div>
+<h2>4. Kala–Newton's Third Law (Action-Reaction Delay)</h2>
+<div class="formula">
+  $$ \text{Reaction Ratio} = \frac{\Phi(t_{\text{receive}})}{\Phi(t_{\text{sender}})} $$
+</div>
+<p>
+  Reaction is affected by differing time states. If Φ differs between two interacting objects, reaction is delayed or amplified.
+</p>
 
-  <div class="formula">
-    <h2>9. Kala Energy Transformation (Anger Theory)</h2>
-    <code>$$ E_{\text{anger}} = mc^2 \cdot \Phi(t) $$</code>
-    <div class="explanation">
-      Emotional energy like anger can be modeled using Kala time dynamics, showing how it transforms with time distortion.
-    </div>
-    <div class="example">
-      Example: Anger in a compressed time state releases more impact in short bursts.
-    </div>
-  </div>
+<hr>
 
-  <div class="formula">
-    <h2>10. Kala Speed of Thought Transmission</h2>
-    <code>$$ v_{\text{thought}} = \frac{c}{\Phi(t)} $$</code>
-    <div class="explanation">
-      Theoretical formula suggesting that thought or quantum-conscious signals travel faster in compressed time.
-    </div>
-    <div class="example">
-      Example: Mind-link communication in Kala fields is faster due to low \( \Phi(t) \).
-    </div>
-  </div>
+<h2>5. Kala Time Travel Equation</h2>
+<div class="formula">
+  $$ t_{\text{travel}} = \int_{0}^{T} \frac{dt}{\Phi(t)} $$
+</div>
+<p>
+  Used to calculate effective experienced time over a journey through warped time fields.
+</p>
+<p><strong>Example:</strong> If Φ(t) varies periodically, time loops or skips may occur.</p>
+
+<hr>
+
+<h2>6. Kala White Hole Output Function</h2>
+<div class="formula">
+  $$ E_{\text{out}} = mc^2 \cdot \Phi^{-1}(t) $$
+</div>
+<p>
+  Energy emitted from a white hole increases inversely with Kala time expansion.
+</p>
+
+<hr>
+
+<h2>7. Kala Energy–Anger Transformation</h2>
+<div class="formula">
+  $$ E_{\text{anger}} = m \cdot \Phi(t) \cdot v^2 $$
+</div>
+<p>
+  Anger is treated as energy and can be transformed via controlled Φ(t). Based on Kala’s emotional energy extension.
+</p>
+
+<hr>
+
+<h2>8. Kala Gravity–Time Curvature</h2>
+<div class="formula">
+  $$ \kappa(t) = \frac{d^2 \Phi(t)}{dt^2} $$
+</div>
+<p>
+  Describes second-order change in time curvature—key for predicting instabilities or collapses in Kala Fields.
+</p>
+
+<hr>
+
+<h2>9. Kala Frequency Function</h2>
+<div class="formula">
+  $$ f_{\text{Kala}} = \omega \cdot \Phi(t) $$
+</div>
+<p>
+  Kala frequency is dependent on time expansion. Used in signal and brainwave simulations inside Kala AI.
+</p>
+
+<hr>
+
+<h2>10. Kala Quantum Core Phase</h2>
+<div class="formula">
+  $$ \psi_{\text{Kala}} = \psi_0 \cdot e^{i \cdot \Phi(t) \cdot \theta} $$
+</div>
+<p>
+  Quantum phase changes due to Kala time expansion. Implemented in KalaQPU neural gates.
+</p>
+
+<hr>
+
+<h2>11. Kala Cosmic Expansion Formula</h2>
+<div class="formula">
+  $$ R(t) = R_0 \cdot \Phi(t) $$
+</div>
+<p>
+  Universal radius scaled by Φ(t), suggesting Kala-influenced cyclic inflation/deflation of space.
+</p>
+
+<hr>
+
+<h2>12. Kala Multiverse Separation Function</h2>
+<div class="formula">
+  $$ D(t) = D_0 \cdot \left(1 + \beta \cdot \sin(\Phi(t) \cdot t)\right) $$
+</div>
+<p>
+  Multiverse timelines drift periodically due to Kala fluctuations. Used in multiverse simulation.
+</p>
+
+<hr>
+
+<h2>13. Kala Temperature-Time Relation</h2>
+<div class="formula">
+  $$ T(t) = T_0 \cdot \Phi^{-1}(t) $$
+</div>
+<p>
+  Temperature varies inversely with Kala time expansion—used for thermal simulations in warped spacetime.
+</p>
+
+<hr>
+
+<h2>14. Kala Simulation Clock Drift</h2>
+<div class="formula">
+  $$ \Delta t_{\text{sim}} = \Delta t_{\text{real}} \cdot \Phi(t) $$
+</div>
+<p>
+  Time drift in simulations running in Kala-engine due to modified time flow.
+</p>
+
+<hr>
+
+<h2>15. Kala QPU Measurement Collapse</h2>
+<div class="formula">
+  $$ P = |\psi_{\text{Kala}}|^2 = |\psi_0 \cdot e^{i\Phi(t)\theta}|^2 $$
+</div>
+<p>
+  Measurement in Kala Quantum Processing collapses to probabilities influenced by Φ(t).
+</p>
+
+---
+
+<h2 style="text-align:center; margin-top: 40px;">Created by Dr. Sai Kamesh Yadavalli — Kala Theory</h2>
 
 </body>
 </html>
