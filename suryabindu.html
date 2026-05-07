@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Suryabindu Encryption System</title>
+
+<style>
+body{
+    margin:0;
+    background:#05070a;
+    color:#00ff88;
+    font-family:Consolas, monospace;
+    overflow-x:hidden;
+}
+
+.container{
+    width:90%;
+    margin:auto;
+    padding:20px;
+}
+
+.title{
+    text-align:center;
+    margin-top:30px;
+}
+
+.title h1{
+    font-size:60px;
+    margin:0;
+    letter-spacing:5px;
+    text-shadow:0 0 20px #00ff88;
+}
+
+.title h2{
+    color:#00ffaa;
+    font-weight:normal;
+    letter-spacing:8px;
+}
+
+.panel{
+    border:1px solid #00ff88;
+    padding:20px;
+    margin-top:25px;
+    border-radius:10px;
+    background:rgba(0,255,120,0.03);
+    box-shadow:0 0 20px rgba(0,255,120,0.1);
+}
+
+.panel h3{
+    color:#00ffaa;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:20px;
+}
+
+.code{
+    background:#000;
+    padding:15px;
+    border-radius:8px;
+    overflow:auto;
+    color:#00ff88;
+}
+
+.sun{
+    width:220px;
+    height:220px;
+    margin:auto;
+    border-radius:50%;
+    background:radial-gradient(circle,#ffd000,#ff8800,#111);
+    box-shadow:
+    0 0 30px #ffaa00,
+    0 0 60px #ff8800,
+    0 0 100px #ff5500;
+    animation:pulse 3s infinite;
+}
+
+@keyframes pulse{
+    0%{transform:scale(1);}
+    50%{transform:scale(1.05);}
+    100%{transform:scale(1);}
+}
+
+.footer{
+    text-align:center;
+    margin-top:40px;
+    color:#00aa66;
+}
+
+.highlight{
+    color:#ffd000;
+}
+
+.terminal{
+    background:#000;
+    border:1px solid #00ff88;
+    padding:15px;
+    border-radius:10px;
+    color:#00ff88;
+    box-shadow:0 0 20px rgba(0,255,120,0.2);
+}
+
+.typing{
+    overflow:hidden;
+    white-space:nowrap;
+    border-right:2px solid #00ff88;
+    width:0;
+    animation:typing 5s steps(50,end) forwards;
+}
+
+@keyframes typing{
+    from{width:0}
+    to{width:100%}
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="title">
+    <h1>SURYABINDU</h1>
+    <h2>ENCRYPTION SYSTEM v2</h2>
+</div>
+
+<div class="panel">
+    <center>
+        <div class="sun"></div>
+    </center>
+
+    <h3>About</h3>
+
+    <p>
+        <span class="highlight">Suryabindu Encryption System (SBES)</span>
+        is an experimental cybersecurity encryption framework that combines:
+    </p>
+
+    <ul>
+        <li>Password-based encryption</li>
+        <li>Random salt generation</li>
+        <li>Solar coordinate entropy</li>
+        <li>63-character SolarKey generation</li>
+        <li>PBKDF2-HMAC-SHA256</li>
+        <li>Fernet AES encryption</li>
+    </ul>
+</div>
+
+<div class="grid">
+
+<div class="panel">
+    <h3>Solar Security Engine</h3>
+
+    <p>
+        SBES uses live solar coordinates:
+    </p>
+
+    <div class="code">
+Theta = Sun Azimuth<br>
+Phi = Sun Elevation
+    </div>
+
+    <p>
+        These values are transformed into a unique
+        <span class="highlight">63-character SolarKey</span>.
+    </p>
+
+    <div class="code">
+Password + Salt + SolarKey
+    </div>
+</div>
+
+<div class="panel">
+    <h3>Encryption Workflow</h3>
+
+    <div class="code">
+1. Read file<br>
+2. Generate solar coordinates<br>
+3. Create Solar63 key<br>
+4. Generate random salt<br>
+5. Derive secure key<br>
+6. Encrypt using Fernet<br>
+7. Save .sbes file
+    </div>
+</div>
+
+</div>
+
+<div class="panel">
+    <h3>Example Terminal</h3>
+
+    <div class="terminal">
+        <div class="typing">
+root@suryabindu:~# Encrypting solar-secured file...
+        </div>
+
+        <br><br>
+
+        [+] Initializing Solar Engine...<br>
+        [+] Generating 63-char SolarKey...<br>
+        [+] Deriving secure encryption key...<br>
+        [+] Encrypting payload...<br>
+        [+] SUCCESS -> secret.pdf.sbes
+    </div>
+</div>
+
+<div class="grid">
+
+<div class="panel">
+    <h3>Key Features</h3>
+
+    <ul>
+        <li>Unique encryption every session</li>
+        <li>Randomized secure key generation</li>
+        <li>Hacker-style terminal UI</li>
+        <li>Portable encrypted container</li>
+        <li>Cross-platform Python support</li>
+    </ul>
+</div>
+
+<div class="panel">
+    <h3>Technology Stack</h3>
+
+    <ul>
+        <li>Python 3</li>
+        <li>Cryptography Library</li>
+        <li>Astral</li>
+        <li>PBKDF2-HMAC-SHA256</li>
+        <li>Fernet AES</li>
+    </ul>
+</div>
+
+</div>
+
+<div class="panel">
+    <h3>Meaning of Suryabindu</h3>
+
+    <div class="code">
+Surya = Sun
+Bindu = Point / Coordinate
+    </div>
+
+    <p>
+        Meaning:
+        <span class="highlight">
+            Encryption powered by the position of the Sun.
+        </span>
+    </p>
+</div>
+
+<div class="footer">
+    <p>
+        SURYABINDU ENCRYPTION SYSTEM © Kala Security Program
+    </p>
+</div>
+
+</div>
+
+</body>
+</html>
